@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.rzem.maven.plugin.ping</groupId>
 	<artifactId>ping-federate-jar-maven-plugin</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>maven-plugin</packaging>
 
 	<properties>
@@ -35,6 +35,14 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub alexrzem Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/alexrzem/ping-federate-jar-maven-plugin</url>
+		</repository>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
